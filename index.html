@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>Asher&#39;s Portfolio</title>
+    <meta
+      name="description"
+      content="Asher's portfolio as a mobile app developer"
+    />
+    <meta name="author" content="Asher" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- OG (Open Graph Data) -->
+    <meta property="og:title" content="애셔의 포트폴리오" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tawans.github.io/portfolio/" />
+    <meta
+      property="og:image"
+      content="https://tawans.github.io/portfolio/images/og.webp"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0a1d75061a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Javascript -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__logo">
+        <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
+        <h1 class="header__logo__title"><a href="#">Asher</a></h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#work">My work</a></li>
+          <li>
+            <a class="header__menu__item" href="#testimonial">Testimonial</a>
+          </li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <div class="max-container home__container">
+          <img
+            class="home__avatar"
+            src="images/profile.png"
+            alt="Ahser's profile"
+          />
+          <div>
+            <h2
+              class="home__title"
+              aria-label="Hello, I'm Mobile Developer Asher"
+            >
+              Hello <br />I&#39;m
+              <strong class="home__title--strong">Mobile Developer</strong>,
+              Asher
+            </h2>
+            <p class="home__description">
+              Mobile developer with a passion for sustainability living in
+              Seoul, South Korea.
+            </p>
+            <a class="home__contact" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section id="about" class="section max-container">
+        <h2 class="title">About me</h2>
+        <p class="description_title">
+          "코드로 아이디어를 녹여내는 모바일 열정가"<br />
+        </p>
+        <p class="description">
+          저는 모바일 애플리케이션 개발을 즐기며, 아름다우면서도 효율적인 앱을
+          만드는 데 무한한 열정을 가지고 있는 소프트웨어 개발자입니다. 새로운
+          도전을 환영하며 최신 기술 동향에 대한 꾸준한 관심을 가지고 있습니다.
+          또한, 창의적인 아이디어를 고안하고 구체화하는 과정을 즐겨, 혁신적인
+          솔루션을 찾는 것에 몰두하고 있습니다.
+        </p>
+        <ul class="majors">
+          <li class="major">
+            <i class="fa-brands fa-html5 major__icon"></i>
+            <p class="major__title">Front-end</p>
+            <p>HTML, CSS, JavaScript, TypeScript, React, Next.js</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-mobile major__icon"></i>
+            <p class="major__title">Flutter</p>
+            <p>Dart, Flutter, Riverpod, Provider, Bloc, GetX</p>
+          </li>
+          <li class="major">
+            <i class="fa-solid fa-mobile-screen-button major__icon"></i>
+            <p class="major__title">iOS</p>
+            <p>Swift, SwiftUI, UiKit, RxSwift, MVVM</p>
+          </li>
+        </ul>
+        <!-- <ul class="jobs">
+          <li class="job">
+            <img src="images/jobs/google.png" alt="google logo" />
+            <div>
+              <p class="job__name">Google as Senior Software Engineer</p>
+              <p class="job__period">2019 Oct - Until now</p>
+            </div>
+          </li>
+          <li class="job">
+            <img src="images/jobs/samsung.png" alt="samsung logo" />
+            <div>
+              <p class="job__name">Samsung as Software Engineer</p>
+              <p class="job__period">2014 Sept - 2019 Oct</p>
+            </div>
+          </li>
+        </ul> -->
+      </section>
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="max-container">
+          <h2 class="title">My Skills</h2>
+          <p class="description">Skills & Attributes</p>
+          <p>
+            새로운 도메인이나 기술에 대한 빠른 학습 능력을 가지고 있으며,
+            변화하는 환경에서도 능동적으로 적응할 수 있습니다. 팀의 성과 향상을
+            위해 지식과 기술을 지속적으로 업그레이드 할 것입니다.
+          </p>
+          <div class="skills">
+            <section class="skills__coding">
+              <h3 class="skills__title">Coding Skills</h3>
+              <ul>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Flutter</span><span>98%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 98%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>iOS</span><span>90%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>JavaScript</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>React</span><span>80%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Next.js</span><span>70%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 79%"></div>
+                  </div>
+                </li>
+                <li class="bar">
+                  <div class="bar__metadata">
+                    <span>Adobe Graphic Tool</span><span>70%</span>
+                  </div>
+                  <div class="bar__bg">
+                    <div class="bar__value" style="width: 68%"></div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="skills__tools">
+              <h3 class="skills__title">Tools</h3>
+              <ul>
+                <li>Visual Studio Code</li>
+                <li>IntelliJ</li>
+                <li>Android Studio</li>
+                <li>Xcode</li>
+                <li>Figma</li>
+                <li>Adobe Graphic tools</li>
+              </ul>
+            </section>
+            <section class="skills__etc">
+              <h3 class="skills__title">Etc</h3>
+              <ul>
+                <li>Git</li>
+                <li>Jira</li>
+                <li>MS office</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!-- Work -->
+      <section id="work" class="section">
+        <div class="max-container">
+          <h2 class="title">My work</h2>
+          <p class="description">Projects</p>
+          <ul class="categories">
+            <li>
+              <button class="category category--selected" data-category="all">
+                All <span class="category__count">4</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="Web">
+                Web <span class="category__count">1</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="Flutter">
+                Flutter <span class="category__count">1</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="Android">
+                Android <span class="category__count">1</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="ETC">
+                ETC <span class="category__count">1</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="project" data-type="Web">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/portfolio.webp"
+                  alt="project1"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">My Portfolio</h3>
+                  <p>HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="Flutter">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/flutter.webp"
+                  alt="FlutterProject"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">My Favorite Hero</h3>
+                  <p>Flutter</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="Android">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/android.webp"
+                  alt="AndroidProject"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">Wearable Robot monitoring app</h3>
+                  <p>Android</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="ETC">
+              <a href="#" target="_blank">
+                <img
+                  src="images/projects/pcgui.webp"
+                  alt="ETCProject"
+                  class="project__img"
+                />
+                <div class="project__metadata">
+                  <h3 class="project__title">
+                    Wearable Robot monitoring PC GUI
+                  </h3>
+                  <p>Javascript, Electron</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <section id="testimonial" class="section max-container">
+        <h2 class="title">Testimonial</h2>
+        <p class="description">See what they say about me</p>
+        <ul class="testimonials">
+          <li class="testimonial">
+            <img
+              src="images/testimonials/ojsteacher.webp"
+              alt="ojsteacher"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
+              <p>
+                태완님은 새싹 Flutter 교육과정에서 만났습니다. Flutter는 물론
+                Android, iOS 네이티브 지식도 겸비한 모바일 개발자입니다. 새로운
+                지식에 대한 습득 능력이 뛰어나고, 새로운 지식을 전파하는 데도
+                앞장서는 분입니다. iOS 행사의 오거나이저로 참여하고, 교육 중에도
+                스터디 팀장을 맡을 정도로 적극적입니다. 그리고 재밌습니다.
+                <br />
+                태완님과 일한다면 분명 재밌게 일할 수 있을 것입니다.
+              </p>
+              <p>
+                <a
+                  href="https://www.youtube.com/@survivalcoding"
+                  class="testimonial__bubble__name"
+                  >오준석</a
+                >
+                / 생존코딩
+              </p>
+            </div>
+          </li>
+          <li class="testimonial">
+            <img
+              src="images/testimonials/son.webp"
+              alt="son"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
+              <p>
+                우리 아빠는 제 인생에서 가장 멋진 분이에요. 아빠랑 있으면 항상
+                웃음과 행복이 함께해요. 저는 50일 된 아기지만, 벌써 아빠가
+                얼마나 멋진 분인지 알아요! 아빠는 정말로 최고에요!
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name">김은찬</a>
+                / 귀염둥이 아들
+              </p>
+            </div>
+          </li>
+          <li class="testimonial">
+            <img
+              src="images/testimonials/bbok.webp"
+              alt="dog"
+              class="testimonial__img"
+            />
+            <div class="testimonial__bubble">
+              <p>
+                우리 주인님은 최고의 친구이자 가족이에요. 함께하는 모든 순간이
+                즐거움으로 가득하고, 주인님과 함께하는 강아지의 삶은 웃음과
+                행복이 넘쳐납니다. 항상 사랑과 정성을 가득 담아 돌봐주시는 우리
+                주인님을 추천합니다 멍멍!
+              </p>
+              <p>
+                <a href="#" class="testimonial__bubble__name">뽁이</a>
+                / 우리집 껌딱지
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- Arrow up -->
+      <aside>
+        <a class="arrow-up" href="#home" title="back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </aside>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="section">
+      <div class="max-container">
+        <h2 class="title">Let&#39;s talk</h2>
+        <p class="description">tawans@naver.com</p>
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/tawans"
+              target="_blank"
+              title="my github link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://www.linkedin.com/in/%ED%83%9C%EC%99%84-%EA%B9%80-7a0798175/"
+              target="_blank"
+              title="my linkedin link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <p>ⓒRoyalblue Coding Asher - All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
