@@ -658,3 +658,59 @@ button:focus {
     right: 1.5rem;
   }
 }
+
+/* ===== Modal (Download Popup) ===== */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal.hidden {
+  display: none;
+}
+.modal__content {
+  background: #fff;
+  color: #222;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 2rem 2.5rem;
+  min-width: 320px;
+  max-width: 90vw;
+  text-align: center;
+}
+.modal__message {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.modal__actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.modal__button {
+  padding: 0.7rem 2.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.modal__button--confirm {
+  background: var(--color-accent, #23769f);
+  color: #fff;
+}
+.modal__button--confirm:hover {
+  background: #155a7c;
+}
+.modal__button--cancel {
+  background: #eee;
+  color: #333;
+}
+.modal__button--cancel:hover {
+  background: #ddd;
+}
