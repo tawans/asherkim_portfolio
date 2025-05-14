@@ -39,13 +39,17 @@ projects.forEach((project) => {
     event.preventDefault();
     const pdfPath = project.dataset.pdf;
     if (pdfPath) {
-      // PDF 다운로드
-      const link = document.createElement('a');
-      link.href = pdfPath;
-      link.download = pdfPath.split('/').pop();
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      // 다운로드 여부 확인 팝업
+      const shouldDownload = confirm('포트폴리오 파일을 다운로드 받으시겠습니까?');
+      if (shouldDownload) {
+        // PDF 다운로드
+        const link = document.createElement('a');
+        link.href = pdfPath;
+        link.download = pdfPath.split('/').pop();
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
     } else {
       // 팝업 표시
       alert('해당 프로젝트는 다운로드 할 파일이 없습니다.');

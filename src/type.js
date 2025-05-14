@@ -13,10 +13,10 @@ new TypeIt('.home__title--strong', {
   .pause(1000)
   .move(-10) //Front-end| Engineer
   .delete(10) //| Engineer
-  .type('iOS') //Back-end| Engineer
+  .type('Mobile') //Back-end| Engineer
   .pause(1000)
   .delete(9) //| Engineer
-  .type('Front-end') //Full-stack| Engineer
+  .type('Full-stack') //Full-stack| Engineer
   .pause(1000)
   .move(10) //Full-stack Engineer|
   .delete()
