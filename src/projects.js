@@ -32,3 +32,23 @@ function filterProjects(filter) {
     projectsContainer.classList.remove('anim-out');
   }, 250);
 }
+
+// 프로젝트 클릭 시 PDF 다운로드 또는 팝업
+projects.forEach((project) => {
+  project.addEventListener('click', (event) => {
+    event.preventDefault();
+    const pdfPath = project.dataset.pdf;
+    if (pdfPath) {
+      // PDF 다운로드
+      const link = document.createElement('a');
+      link.href = pdfPath;
+      link.download = pdfPath.split('/').pop();
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      // 팝업 표시
+      alert('해당 프로젝트는 다운로드 할 파일이 없습니다.');
+    }
+  });
+});
